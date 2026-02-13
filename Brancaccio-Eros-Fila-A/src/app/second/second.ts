@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-second',
   templateUrl: './second.html',
   styleUrl: './second.css',
+    standalone: true,
 })
 export class Second {
-  tuo_nome: string = 'secondo';
+  tuo_nome = 'secondo';
 
 }

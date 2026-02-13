@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-third',
   templateUrl: './third.html',
   styleUrl: './third.css',
+    standalone: true,
 })
 export class Third {
-  tuo_nome: string = 'terzo';
+  tuo_nome = 'terzo';
 }

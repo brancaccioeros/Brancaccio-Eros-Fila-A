@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-fourth',
   templateUrl: './fourth.html',
   styleUrl: './fourth.css',
+  standalone: true
 })
 export class Fourth {
-   tuo_nome: string = 'quarto';
+   tuo_nome = 'quarto';
 }
