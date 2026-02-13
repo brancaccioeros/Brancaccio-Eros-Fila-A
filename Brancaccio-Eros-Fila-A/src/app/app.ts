@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {secondComponent} from './second/second';
+import {thirdComponent} from './third/third';
+import {fourthComponent} from './fourth/fourth';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true;
+  imports: [RouterOutlet, secondComponent, thirdComponent, fourthComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Brancaccio-Eros-Fila-A');
+ tuo_nome: string='app';
 }
